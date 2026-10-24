@@ -1,0 +1,2 @@
+from assistente_corporativo.mcp_server.resources_politicas import registrar_resources_politicas
+registrar_resources_politicas(mcp)

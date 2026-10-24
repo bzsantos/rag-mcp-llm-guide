@@ -1,0 +1,27 @@
+# Testes HTTP do Capítulo 9 (use a extensão REST Client do VS Code)
+
+### Criar cliente (agora com corpo JSON)
+POST http://localhost:8000/clientes
+Content-Type: application/json
+
+{
+  "nome": "Empresa Gamma",
+  "email": "contato@gamma.com"
+}
+
+### Testando validação (deve falhar)
+POST http://localhost:8000/clientes
+Content-Type: application/json
+
+{
+  "nome": "Empresa Delta",
+  "email": "isso-nao-e-um-email"
+}
+
+### Testando campo obrigatório ausente
+POST http://localhost:8000/clientes
+Content-Type: application/json
+
+{
+  "email": "contato@delta.com"
+}

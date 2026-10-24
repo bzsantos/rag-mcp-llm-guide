@@ -1,0 +1,8 @@
+# Testes HTTP do Capítulo 14 (use a extensão REST Client do VS Code)
+
+### Com o Ollama parado
+POST http://localhost:8000/chat
+Content-Type: application/json
+Authorization: Bearer SEU_TOKEN
+
+{ "pergunta": "Teste" }

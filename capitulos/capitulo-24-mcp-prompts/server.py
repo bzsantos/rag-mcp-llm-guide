@@ -1,0 +1,2 @@
+from assistente_corporativo.mcp_server.prompts_relatorios import registrar_prompts_relatorios
+registrar_prompts_relatorios(mcp)

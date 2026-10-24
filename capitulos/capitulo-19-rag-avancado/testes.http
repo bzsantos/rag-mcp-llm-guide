@@ -1,0 +1,8 @@
+# Testes HTTP do Capítulo 19 (use a extensão REST Client do VS Code)
+
+### Uma pergunta vaga, de propósito
+POST http://localhost:8000/chat
+Content-Type: application/json
+Authorization: Bearer COLE_SEU_TOKEN_AQUI
+
+{ "pergunta": "e sobre o tempo de descanso?" }

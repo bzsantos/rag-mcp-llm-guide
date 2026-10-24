@@ -1,0 +1,36 @@
+# Testes HTTP do Capítulo 28 (use a extensão REST Client do VS Code)
+
+### 1. Registrar usuário
+POST http://localhost:8000/auth/registrar
+Content-Type: application/json
+
+{ "email": "admin@empresa.com", "senha": "senha123" }
+
+### 2. Login
+POST http://localhost:8000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=admin@empresa.com&password=senha123
+
+### 3. Criar cliente (use o token do passo 2)
+POST http://localhost:8000/clientes
+Content-Type: application/json
+Authorization: Bearer SEU_TOKEN
+
+{ "nome": "Empresa Acme", "email": "contato@acme.com" }
+
+### 4. Upload de documento — via /docs (Swagger UI), como no Capítulo 17
+
+### 5. Pergunta via RAG
+POST http://localhost:8000/chat/agente
+Content-Type: application/json
+Authorization: Bearer SEU_TOKEN
+
+{ "pergunta": "Quantos dias de férias um funcionário tem direito?" }
+
+### 6. Pergunta via Tool MCP
+POST http://localhost:8000/chat/agente
+Content-Type: application/json
+Authorization: Bearer SEU_TOKEN
+
+{ "pergunta": "Qual o e-mail cadastrado do cliente de id 1?" }

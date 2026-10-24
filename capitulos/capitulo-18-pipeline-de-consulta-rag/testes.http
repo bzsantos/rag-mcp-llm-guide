@@ -1,0 +1,15 @@
+# Testes HTTP do Capítulo 18 (use a extensão REST Client do VS Code)
+
+### Pergunta sobre o documento indexado
+POST http://localhost:8000/chat
+Content-Type: application/json
+Authorization: Bearer COLE_SEU_TOKEN_AQUI
+
+{ "pergunta": "Do que trata o documento que eu indexei?" }
+
+### Pergunta cuja resposta NÃO está no documento
+POST http://localhost:8000/chat
+Content-Type: application/json
+Authorization: Bearer COLE_SEU_TOKEN_AQUI
+
+{ "pergunta": "Qual é a capital da Mongólia?" }

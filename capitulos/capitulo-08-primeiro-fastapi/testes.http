@@ -1,0 +1,10 @@
+# Testes HTTP do Capítulo 8 (use a extensão REST Client do VS Code)
+
+### Health check
+GET http://localhost:8000/health
+
+### Listar clientes
+GET http://localhost:8000/clientes
+
+### Criar cliente (query param — vamos corrigir isso já já)
+POST http://localhost:8000/clientes?nome=Empresa Gamma

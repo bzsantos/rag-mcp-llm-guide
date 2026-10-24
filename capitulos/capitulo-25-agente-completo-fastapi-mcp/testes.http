@@ -1,0 +1,15 @@
+# Testes HTTP do Capítulo 25 (use a extensão REST Client do VS Code)
+
+### Pergunta sobre documento (deve usar RAG)
+POST http://localhost:8000/chat/agente
+Content-Type: application/json
+Authorization: Bearer COLE_SEU_TOKEN_AQUI
+
+{ "pergunta": "Quantos dias de férias um funcionário tem direito?" }
+
+### Pergunta sobre dado dinâmico (deve usar Tool)
+POST http://localhost:8000/chat/agente
+Content-Type: application/json
+Authorization: Bearer COLE_SEU_TOKEN_AQUI
+
+{ "pergunta": "Qual o e-mail cadastrado do cliente de id 1?" }
